@@ -1,0 +1,40 @@
+.container {
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; /* Adjust as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .grid-container .draw,
+  .grid-container .preview {
+    max-width: 100%;
+    width: 600px;
+    height: 200px;
+    /* max-height: 50em; */
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 5px;
+  }
+  
+  .container .bottom-component {
+    grid-column: span 2; /* Adjusted to span 2 columns */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
